@@ -1,1 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Rejection Guide</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
 
+        h1 {
+            font-size: 32px;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .primary-btn {
+            background: #3b82f6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .secondary-btn {
+            background: #1a1a1a;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .section-btn {
+            display: block;
+            width: fit-content;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: left;
+            transition: all 0.3s ease;
+        }
+
+        .section-btn:hover {
+            background: #f5f5f5;
+            transform: translateX(5px);
+        }
+
+        .content {
+            display: none;
+            padding: 20px;
+            margin-top: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #3b82f6;
+        }
+
+        .response-box {
+            background: #fff;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+        }
+
+        .tip-box {
+            background: #e8f4ff;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 10px 0;
+        }
+
+        .warning-box {
+            background: #fff3f3;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 10px 0;
+            border: 1px solid #ffcdd2;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 10px 0;
+            color: #444;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Complete Rejection Guide (2024)</h1>
+        <div class="subtitle">Master the art of handling rejection with grace</div>
+        
+        <div class="nav-buttons">
+            <button class="primary-btn" onclick="showAll()">View All</button>
+            <button class="secondary-btn" onclick="showPhilosophy()">Rejection Philosophy</button>
+            <button class="secondary-btn" onclick="showResponses()">Response Examples</button>
+        </div>
+
+        <!-- Rejection Philosophy -->
+        <button class="section-btn" onclick="toggleSection('rejection-philosophy')">Understanding Rejection</button>
+        <div id="rejection-philosophy" class="content">
+            <h3>Philosophical Framework:</h3>
+            
+            <div class="tip-box">
+                <strong>The Encapsulation Method</strong>
+                <ul>
+                    <li>Contain rejection within its specific context</li>
+                    <li>Don't let it affect your overall self-worth</li>
+                    <li>View each rejection as an isolated incident</li>
+                    <li>Remember: A single rejection doesn't define you</li>
+                </ul>
+            </div>
+
+            <div class="tip-box">
+                <strong>The Magnifying Effect</strong>
+                <ul>
+                    <li>Avoid transforming a single rejection into broader doubts</li>
+                    <li>Recognize when you're catastrophizing</li>
+                    <li>Keep perspective on the specific interaction</li>
+                </ul>
+            </div>
+
+            <div class="tip-box">
+                <strong>The Protection Visualization</strong>
+                <ul>
+                    <li>Picture your identity as concentric circles</li>
+                    <li>Create a protective barrier around rejection events</li>
+                    <li>Keep your core self-worth protected</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Polite Rejection Responses -->
+        <button class="section-btn" onclick="toggleSection('polite-responses')">Responses to Polite Rejections</button>
+        <div id="polite-responses" class="content">
+            <div class="response-box">
+                <strong>Best Responses:</strong>
+                <ol>
+                    <li>"Cool, I'm still glad I came over and said hi, I was drawn to ya. Have a great night."</li>
+                    <li>"That's okay. Everyone has different preferences. Enjoy your day."</li>
+                    <li>"Okay, onto the next adventure! Enjoy your evening."</li>
+                    <li>"Cool, I obviously have high standards, have a good night."</li>
+                    <li>"Alright, I respect your honesty. Have a good one."</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Rude Rejection Responses -->
+        <button class="section-btn" onclick="toggleSection('rude-responses')">Responses to Rude Rejections</button>
+        <div id="rude-responses" class="content">
+            <div class="response-box">
+                <strong>Advanced Responses:</strong>
+                <ol>
+                    <li>"Nice, someone with some backbone in the city, where have you been all my life?"</li>
+                    <li>[Long pause] "I'm surprised by that" (or "I read you to be different") "Have a good day."</li>
+                    <li>"I don't respond to that attitude. Bye."</li>
+                    <li>"Did you mean that to hurt me?" (If Yes) "Sad."</li>
+                    <li>"Your words say a lot more about you than they do about me. Have a good one."</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Rejection Jujitsu -->
+        <button class="section-btn" onclick="toggleSection('rejection-jujitsu')">Rejection Jujitsu Techniques</button>
+        <div id="rejection-jujitsu" class="content">
+            <div class="tip-box">
+                <strong>Key Strategies:</strong>
+                <ul>
+                    <li>Thread with indifference: "Speaking of..." or "Are you OK?"</li>
+                    <li>Use humor: Puns, Misinterpretation, character play</li>
+                    <li>Make secure self-statements</li>
+                    <li>Remember: The person to react negatively loses</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Body Language -->
+        <button class="section-btn" onclick="toggleSection('body-language')">Body Language During Rejection</button>
+        <div id="body-language" class="content">
+            <div class="tip-box">
+                <strong>Physical Presence:</strong>
+                <ul>
+                    <li>Maintain relaxed posture</li>
+                    <li>Keep calm, collected body language</li>
+                    <li>Add curious or concerned eye contact</li>
+                    <li>Avoid defensive gestures</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function toggleSection(id) {
+            $('#' + id).slideToggle();
+        }
+
+        function showAll() {
+            $('.content').slideDown();
+        }
+
+        function showPhilosophy() {
+            $('.content').slideUp();
+            $('#rejection-philosophy').slideDown();
+            $('#body-language').slideDown();
+        }
+
+        function showResponses() {
+            $('.content').slideUp();
+            $('#polite-responses').slideDown();
+            $('#rude-responses').slideDown();
+            $('#rejection-jujitsu').slideDown();
+        }
+    </script>
+</body>
+</html>
